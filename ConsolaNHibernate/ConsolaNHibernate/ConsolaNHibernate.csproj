@@ -114,6 +114,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controladores\Controlador.cs" />
     <Compile Include="Mapeoak\UsuarioMap.cs" />
     <Compile Include="Modeloak\Usuario.cs" />
     <Compile Include="NHibernateHelper.cs" />

@@ -44,7 +44,8 @@ namespace ConsolaNHibernate
                 )
                 .Mappings(m =>
                     m.FluentMappings.AddFromAssemblyOf<UsuarioMap>())
-                .ExposeConfiguration(cfg => new SchemaExport(cfg).Create(false, true)) // DB-an sortu nahi baduzu taula
+                //.ExposeConfiguration(cfg => new SchemaExport(cfg).Create(false, true)) // DB-an sortu nahi baduzu taula
+                .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(false, true)) // DB-an sortu nahi baduzu taula
                 .BuildSessionFactory();
         }
 
