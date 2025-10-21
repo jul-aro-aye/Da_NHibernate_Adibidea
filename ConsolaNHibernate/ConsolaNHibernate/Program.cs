@@ -1,9 +1,6 @@
 ﻿using ConsolaNHibernate.Modeloak;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsolaNHibernate
 {
@@ -11,8 +8,38 @@ namespace ConsolaNHibernate
     {
         static void Main(string[] args)
         {
-            // Erabiltzaile berriaren datuak eskatu
-            Console.WriteLine("=== Erabiltzaile berria sartzea ===");
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine("Aukeratu zeregina:");
+                Console.WriteLine("1. Sortu erabiltzailea");
+                Console.WriteLine("2. Sortu helbide berria");
+                Console.WriteLine("3. Atera");
+                Console.Write("Opción: ");
+                string opcion = Console.ReadLine();
+
+                switch (opcion)
+                {
+                    case "1":
+                        SortuUsuario();
+                        break;
+                    case "2":
+                        SortuDireccion();
+                        break;
+                    case "3":
+                        return;
+                    default:
+                        Console.WriteLine("Opción inválida. Presione una tecla para intentar de nuevo...");
+                        Console.ReadKey();
+                        break;
+                }
+            }
+        }
+
+        private static void SortuUsuario()
+        {
+            Console.WriteLine("\n=== Insertar nuevo usuario ===");
+
             Console.Write("Usuario: ");
             string usuario = Console.ReadLine();
 
@@ -22,7 +49,6 @@ namespace ConsolaNHibernate
             Console.Write("Email: ");
             string email = Console.ReadLine();
 
-            // Objektua sortu
             var nuevoUsuario = new Usuario
             {
                 UsuarioNombre = usuario,
@@ -30,28 +56,45 @@ namespace ConsolaNHibernate
                 Email = email
             };
 
-            // NHibernate bidez gorde eta gero guztiak inprimatu
             using (var session = NHibernateHelper.OpenSession())
             using (var transaction = session.BeginTransaction())
             {
-                // 1️⃣ Gorde erabiltzaile berria
                 session.Save(nuevoUsuario);
                 transaction.Commit();
             }
 
-            // 2️⃣ Guztiak inprimatu
-            using (var session = NHibernateHelper.OpenSession())
-            {
-                var usuarios = session.Query<Usuario>().ToList();
+            Console.WriteLine("Usuario insertado correctamente.\nPresione una tecla para continuar...");
+            Console.ReadKey();
+        }
 
-                Console.WriteLine("\n=== Datu-baseko erabiltzaile guztiak ===");
-                foreach (var u in usuarios)
-                {
-                    Console.WriteLine($"{u.Idx}: {u.Nombre} ({u.UsuarioNombre}) - Email: {u.Email}");
-                }
+        private static void SortuDireccion()
+        {
+            Console.WriteLine("\n=== Crear nueva dirección ===");
+
+            Console.Write("Calle: ");
+            string calle = Console.ReadLine();
+
+            Console.Write("Ciudad: ");
+            string ciudad = Console.ReadLine();
+
+            Console.Write("Código Postal: ");
+            string codigoPostal = Console.ReadLine();
+
+            var nuevaDireccion = new Direccion
+            {
+                Calle = calle,
+                Ciudad = ciudad,
+                CodigoPostal = codigoPostal
+            };
+
+            using (var session = NHibernateHelper.OpenSession())
+            using (var transaction = session.BeginTransaction())
+            {
+                session.Save(nuevaDireccion);
+                transaction.Commit();
             }
 
-            Console.WriteLine("\nSakatu tekla bat amaitzeko...");
+            Console.WriteLine("Dirección creada correctamente.\nPresione una tecla para continuar...");
             Console.ReadKey();
         }
     }
