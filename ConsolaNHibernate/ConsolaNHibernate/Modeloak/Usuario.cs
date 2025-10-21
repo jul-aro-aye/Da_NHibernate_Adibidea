@@ -12,6 +12,7 @@ namespace ConsolaNHibernate.Modeloak
         public virtual string UsuarioNombre { get; set; }
         public virtual string Nombre { get; set; }
         public virtual string Email { get; set; }
+        public virtual Direccion Direccion { get; set; }
 
     }
 }
