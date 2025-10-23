@@ -114,7 +114,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controladores\Controlador.cs" />
+    <Compile Include="Controladores\ControladorUsuario.cs" />
+    <Compile Include="Controladores\ControladorDireccion.cs" />
     <Compile Include="Mapeoak\DireccionMap.cs" />
     <Compile Include="Mapeoak\UsuarioMap.cs" />
     <Compile Include="Modeloak\Direccion.cs" />

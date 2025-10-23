@@ -8,28 +8,38 @@ namespace ConsolaNHibernate
     {
         static void Main(string[] args)
         {
-            while (true)
+            Boolean atera = false;
+            while (!atera)
             {
                 Console.Clear();
                 Console.WriteLine("Aukeratu zeregina:");
-                Console.WriteLine("1. Sortu erabiltzailea");
-                Console.WriteLine("2. Sortu helbide berria");
-                Console.WriteLine("3. Atera");
+                Console.WriteLine("1. Erabiltzaileak bistaratu");
+                Console.WriteLine("2. Sortu erabiltzailea");
+                Console.WriteLine("3. Ezabatu erabiltzailea");
+                Console.WriteLine("4. Eguneratu erabiltzailea");
+                Console.WriteLine("5. Atera");
                 Console.Write("Opción: ");
                 string opcion = Console.ReadLine();
 
                 switch (opcion)
                 {
                     case "1":
-                        SortuUsuario();
+                        IkusiUsuarioak();
                         break;
                     case "2":
-                        SortuDireccion();
+                        SortuUsuario();
                         break;
                     case "3":
-                        return;
+                        EzabatuUsuarioa();
+                        break;
+                     case "4":
+                         EguneratuUsuarioa();
+                            break;
+                    case "5":
+                        atera = true;
+                        break;
                     default:
-                        Console.WriteLine("Opción inválida. Presione una tecla para intentar de nuevo...");
+                        Console.WriteLine("Operazio okerra. Sakatu teklaren bat berriro saiatzeko...");
                         Console.ReadKey();
                         break;
                 }
@@ -63,7 +73,7 @@ namespace ConsolaNHibernate
                 transaction.Commit();
             }
 
-            Console.WriteLine("Usuario insertado correctamente.\nPresione una tecla para continuar...");
+            Console.WriteLine("Erabiltzailea ongi ezarrita.\nSakatu tekla bat jarraitzeko...");
             Console.ReadKey();
         }
 
@@ -94,7 +104,7 @@ namespace ConsolaNHibernate
                 transaction.Commit();
             }
 
-            Console.WriteLine("Dirección creada correctamente.\nPresione una tecla para continuar...");
+            Console.WriteLine("Helbidea egoki ezarrita.\nSakatu tekla bat jarraitzeko...");
             Console.ReadKey();
         }
     }
