@@ -30,7 +30,7 @@ namespace ConsolaNHibernate
                             IkusiUsuarioak();
                             break;
                         case "2":
-                            SortuUsuario();
+                            SortuUsuarioEtaDireccion();
                             break;
                         case "3":
                             EzabatuUsuarioa();
@@ -56,33 +56,32 @@ namespace ConsolaNHibernate
 
             foreach (var usuario in usuarios)
             {
-                Console.WriteLine("ID: {0}, Usuario: {1}, Nombre: {2}, Email: {3}",
-                    usuario.Idx, usuario.UsuarioNombre, usuario.Nombre, usuario.Email);
+                Console.WriteLine("ID: {0}, Usuario: {1}, Nombre: {2}, Email: {3}, Ciudad: {4}, CP: {5}",
+                    usuario.Idx, usuario.UsuarioNombre, usuario.Nombre, usuario.Email, usuario.Direccion.Ciudad, usuario.Direccion.CodigoPostal);
             }
 
             Console.WriteLine("Sakatu tekla bat jarraitzeko...");
             Console.ReadKey();
         }
-
-        private static void SortuUsuario()
+        private static void SortuUsuarioEtaDireccion()
         {
-            Console.WriteLine("\n=== Ezarri erabiltzaile berria ===");
-
-            Console.Write("Usuario: ");
-            string usuario = Console.ReadLine();
-
-            Console.Write("Nombre: ");
-            string nombre = Console.ReadLine();
-
-            Console.Write("Email: ");
-            string email = Console.ReadLine();
 
             var nuevoUsuario = new Usuario
             {
-                UsuarioNombre = usuario,
-                Nombre = nombre,
-                Email = email
+                UsuarioNombre = "jul_aro_aye",
+                Nombre = "Julen",
+                Email = "julen@gmail.com"
             };
+
+            var nuevoDireccion = new Direccion
+            {
+                Calle = "Calle Falsa 123",
+                Ciudad = "Springfield",
+                CodigoPostal = "12345",
+                Usuario = nuevoUsuario
+            };
+
+            nuevoUsuario.Direccion = nuevoDireccion;
 
             controladorUsuario.ErabiltzaileaSortu(nuevoUsuario);
 
@@ -93,58 +92,12 @@ namespace ConsolaNHibernate
 
         private static void EzabatuUsuarioa()
         {
-            Console.WriteLine("\n=== Ezabatu usuario ===");
-            Console.Write("Usuario id ezabatzeko: ");
-
-            if (int.TryParse(Console.ReadLine(), out int usuarioId))
-            {
-                controladorUsuario.ErabiltzaileaEzabatu(usuarioId);
-                Console.WriteLine("Usuarioa ongi ezabatu da.");
-            }
-            else
-            {
-                Console.WriteLine("ID baliogabea.");
-            }
-
-            Console.WriteLine("Sakatu tekla bat jarraitzeko...");
-            Console.ReadKey();
+            
         }
 
         private static void EguneratuUsuarioa()
         {
-            Console.WriteLine("\n=== Eguneratu usuario ===");
-            Console.Write("Usuario id eguneratzeko: ");
-
-            if (int.TryParse(Console.ReadLine(), out int usuarioId))
-            {
-                var usuario = controladorUsuario.ErabiltzaileaLortu(usuarioId);
-                if (usuario != null)
-                {
-                    Console.Write($"Nuevo nombre (ahora: {usuario.Nombre}): ");
-                    string nuevoNombre = Console.ReadLine();
-                    if (!string.IsNullOrWhiteSpace(nuevoNombre))
-                        usuario.Nombre = nuevoNombre;
-
-                    Console.Write($"Nuevo email (ahora: {usuario.Email}): ");
-                    string nuevoEmail = Console.ReadLine();
-                    if (!string.IsNullOrWhiteSpace(nuevoEmail))
-                        usuario.Email = nuevoEmail;
-
-                    controladorUsuario.ErabiltzaileaEguneratu(usuario);
-                    Console.WriteLine("Erabiltzailea egoki eguneratuta.");
-                }
-                else
-                {
-                    Console.WriteLine("Erabiltzailea ez da aurkitu.");
-                }
-            }
-            else
-            {
-                Console.WriteLine("ID okerra.");
-            }
-
-            Console.WriteLine("Sakatu tekla bat jarraitzeko...");
-            Console.ReadKey();
+            
         }
 
     }

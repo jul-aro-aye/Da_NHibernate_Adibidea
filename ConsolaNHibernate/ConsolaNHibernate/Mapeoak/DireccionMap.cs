@@ -18,6 +18,7 @@ namespace ConsolaNHibernate.Mapeoak
             Id(x => x.Idx).Column("idx").GeneratedBy.Identity();
             Map(x => x.Calle).Column("calle").Length(50);
             Map(x => x.Ciudad).Column("ciudad").Length(30);
+            Map(x => x.CodigoPostal).Column("codigoPostal").Length(10);
             References(x => x.Usuario)
                 .Column("usuario_idx") // ← Erabiltzailearen idx atala duen zutabea
                 .Unique();
