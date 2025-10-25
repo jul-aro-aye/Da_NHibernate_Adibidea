@@ -14,5 +14,7 @@ namespace ConsolaNHibernate.Modeloak
         public virtual string Email { get; set; }
         public virtual Direccion Direccion { get; set; }
 
+        public virtual IList<Pedido> Pedidos { get; set; }
+
     }
 }

@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Mirari\\Desktop\\Multiplataforma\\2Kurtxoa\\Datu_Atzipenak\\Programak\\Da_NHibernate_Adibidea\\ConsolaNHibernate\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EACEB5AD-2AF0-4DF8-BEF5-16AC6BFFC5B4}|ConsolaNHibernate\\ConsolaNHibernate.csproj|c:\\users\\mirari\\desktop\\multiplataforma\\2kurtxoa\\datu_atzipenak\\programak\\da_nhibernate_adibidea\\consolanhibernate\\consolanhibernate\\modeloak\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EACEB5AD-2AF0-4DF8-BEF5-16AC6BFFC5B4}|ConsolaNHibernate\\ConsolaNHibernate.csproj|solutionrelative:consolanhibernate\\modeloak\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EACEB5AD-2AF0-4DF8-BEF5-16AC6BFFC5B4}|ConsolaNHibernate\\ConsolaNHibernate.csproj|C:\\Users\\Mirari\\Desktop\\Multiplataforma\\2Kurtxoa\\Datu_Atzipenak\\Programak\\Da_NHibernate_Adibidea\\ConsolaNHibernate\\consolanhibernate\\modeloak\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EACEB5AD-2AF0-4DF8-BEF5-16AC6BFFC5B4}|ConsolaNHibernate\\ConsolaNHibernate.csproj|solutionrelative:consolanhibernate\\modeloak\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EACEB5AD-2AF0-4DF8-BEF5-16AC6BFFC5B4}|ConsolaNHibernate\\ConsolaNHibernate.csproj|c:\\users\\mirari\\desktop\\multiplataforma\\2kurtxoa\\datu_atzipenak\\programak\\da_nhibernate_adibidea\\consolanhibernate\\consolanhibernate\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EACEB5AD-2AF0-4DF8-BEF5-16AC6BFFC5B4}|ConsolaNHibernate\\ConsolaNHibernate.csproj|solutionrelative:consolanhibernate\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,10 +35,6 @@
       "RelativeMoniker": "D:0:0:{EACEB5AD-2AF0-4DF8-BEF5-16AC6BFFC5B4}|ConsolaNHibernate\\ConsolaNHibernate.csproj|solutionrelative:consolanhibernate\\mapeoak\\usuariomap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EACEB5AD-2AF0-4DF8-BEF5-16AC6BFFC5B4}|ConsolaNHibernate\\ConsolaNHibernate.csproj|C:\\Users\\Mirari\\Desktop\\Multiplataforma\\2Kurtxoa\\Datu_Atzipenak\\Programak\\Da_NHibernate_Adibidea\\ConsolaNHibernate\\consolanhibernate\\modeloak\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EACEB5AD-2AF0-4DF8-BEF5-16AC6BFFC5B4}|ConsolaNHibernate\\ConsolaNHibernate.csproj|solutionrelative:consolanhibernate\\modeloak\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EACEB5AD-2AF0-4DF8-BEF5-16AC6BFFC5B4}|ConsolaNHibernate\\ConsolaNHibernate.csproj|C:\\Users\\Mirari\\Desktop\\Multiplataforma\\2Kurtxoa\\Datu_Atzipenak\\Programak\\Da_NHibernate_Adibidea\\ConsolaNHibernate\\consolanhibernate\\controladores\\controladordireccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EACEB5AD-2AF0-4DF8-BEF5-16AC6BFFC5B4}|ConsolaNHibernate\\ConsolaNHibernate.csproj|solutionrelative:consolanhibernate\\controladores\\controladordireccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1038,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,7 +54,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "Pedido.cs",
+              "DocumentMoniker": "C:\\Users\\Mirari\\Desktop\\Multiplataforma\\2Kurtxoa\\Datu_Atzipenak\\Programak\\Da_NHibernate_Adibidea\\ConsolaNHibernate\\ConsolaNHibernate\\Modeloak\\Pedido.cs",
+              "RelativeDocumentMoniker": "ConsolaNHibernate\\Modeloak\\Pedido.cs",
+              "ToolTip": "C:\\Users\\Mirari\\Desktop\\Multiplataforma\\2Kurtxoa\\Datu_Atzipenak\\Programak\\Da_NHibernate_Adibidea\\ConsolaNHibernate\\ConsolaNHibernate\\Modeloak\\Pedido.cs",
+              "RelativeToolTip": "ConsolaNHibernate\\Modeloak\\Pedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T16:53:43.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "NHibernateHelper.cs",
               "DocumentMoniker": "C:\\Users\\Mirari\\Desktop\\Multiplataforma\\2Kurtxoa\\Datu_Atzipenak\\Programak\\Da_NHibernate_Adibidea\\ConsolaNHibernate\\ConsolaNHibernate\\NHibernateHelper.cs",
               "RelativeDocumentMoniker": "ConsolaNHibernate\\NHibernateHelper.cs",
@@ -62,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "DireccionMap.cs",
               "DocumentMoniker": "C:\\Users\\Mirari\\Desktop\\Multiplataforma\\2Kurtxoa\\Datu_Atzipenak\\Programak\\Da_NHibernate_Adibidea\\ConsolaNHibernate\\ConsolaNHibernate\\Mapeoak\\DireccionMap.cs",
               "RelativeDocumentMoniker": "ConsolaNHibernate\\Mapeoak\\DireccionMap.cs",
@@ -74,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "UsuarioMap.cs",
               "DocumentMoniker": "C:\\Users\\Mirari\\Desktop\\Multiplataforma\\2Kurtxoa\\Datu_Atzipenak\\Programak\\Da_NHibernate_Adibidea\\ConsolaNHibernate\\ConsolaNHibernate\\Mapeoak\\UsuarioMap.cs",
               "RelativeDocumentMoniker": "ConsolaNHibernate\\Mapeoak\\UsuarioMap.cs",
@@ -86,20 +103,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Mirari\\Desktop\\Multiplataforma\\2Kurtxoa\\Datu_Atzipenak\\Programak\\Da_NHibernate_Adibidea\\ConsolaNHibernate\\ConsolaNHibernate\\Program.cs",
               "RelativeDocumentMoniker": "ConsolaNHibernate\\Program.cs",
               "ToolTip": "C:\\Users\\Mirari\\Desktop\\Multiplataforma\\2Kurtxoa\\Datu_Atzipenak\\Programak\\Da_NHibernate_Adibidea\\ConsolaNHibernate\\ConsolaNHibernate\\Program.cs",
               "RelativeToolTip": "ConsolaNHibernate\\Program.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAAAGYAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAAHkAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-23T17:30:16.896Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ControladorUsuario.cs",
               "DocumentMoniker": "C:\\Users\\Mirari\\Desktop\\Multiplataforma\\2Kurtxoa\\Datu_Atzipenak\\Programak\\Da_NHibernate_Adibidea\\ConsolaNHibernate\\ConsolaNHibernate\\Controladores\\ControladorUsuario.cs",
               "RelativeDocumentMoniker": "ConsolaNHibernate\\Controladores\\ControladorUsuario.cs",
@@ -107,12 +124,11 @@
               "RelativeToolTip": "ConsolaNHibernate\\Controladores\\ControladorUsuario.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAArwDIAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T17:23:44.791Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-23T17:23:44.791Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ControladorDireccion.cs",
               "DocumentMoniker": "C:\\Users\\Mirari\\Desktop\\Multiplataforma\\2Kurtxoa\\Datu_Atzipenak\\Programak\\Da_NHibernate_Adibidea\\ConsolaNHibernate\\ConsolaNHibernate\\Controladores\\ControladorDireccion.cs",
               "RelativeDocumentMoniker": "ConsolaNHibernate\\Controladores\\ControladorDireccion.cs",
@@ -124,19 +140,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\Mirari\\Desktop\\Multiplataforma\\2Kurtxoa\\Datu_Atzipenak\\Programak\\Da_NHibernate_Adibidea\\ConsolaNHibernate\\ConsolaNHibernate\\Modeloak\\Usuario.cs",
               "RelativeDocumentMoniker": "ConsolaNHibernate\\Modeloak\\Usuario.cs",
               "ToolTip": "C:\\Users\\Mirari\\Desktop\\Multiplataforma\\2Kurtxoa\\Datu_Atzipenak\\Programak\\Da_NHibernate_Adibidea\\ConsolaNHibernate\\ConsolaNHibernate\\Modeloak\\Usuario.cs",
               "RelativeToolTip": "ConsolaNHibernate\\Modeloak\\Usuario.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAjwA4AAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAjwBAAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T14:32:59.707Z"
+              "WhenOpened": "2025-10-20T14:32:59.707Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Direccion.cs",
               "DocumentMoniker": "C:\\Users\\Mirari\\Desktop\\Multiplataforma\\2Kurtxoa\\Datu_Atzipenak\\Programak\\Da_NHibernate_Adibidea\\ConsolaNHibernate\\ConsolaNHibernate\\Modeloak\\Direccion.cs",
               "RelativeDocumentMoniker": "ConsolaNHibernate\\Modeloak\\Direccion.cs",

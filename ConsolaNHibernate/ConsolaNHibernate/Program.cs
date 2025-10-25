@@ -110,7 +110,23 @@ namespace ConsolaNHibernate
 
         private static void EguneratuUsuarioa()
         {
-            
+            var usuario = controladorUsuario.ErabiltzaileaLortu(4); // Ekarri nahi den erabiltzailearen IDa ezarrita
+            if (usuario != null)
+            {
+                // Eguneratu nahi diren datuak ezarrita
+                usuario.UsuarioNombre = "iker_urr_iri";
+                usuario.Nombre = "Iker"; 
+                usuario.Email = "iker@gmail.com";
+                usuario.Direccion.Ciudad = "Bilbao";
+                usuario.Direccion.CodigoPostal = "48001";
+                controladorUsuario.ErabiltzaileaEguneratu(usuario);
+                Console.WriteLine("Erabiltzailea ongi eguneratu da.\nSakatu tekla bat jarraitzeko...");
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("Erabiltzailea ez da aurkitu.\nSakatu tekla bat jarraitzeko...");
+            }
         }
 
     }
