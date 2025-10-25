@@ -129,5 +129,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="DB\erabiltzaileak.sql" />
+    <Content Include="DB\eskariak.sql" />
+    <Content Include="DB\helbideak.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
