@@ -56,6 +56,7 @@ namespace ConsolaNHibernate
 
             foreach (var usuario in usuarios)
             {
+                // Erabiltzailearen datuak eta helbidea bistaratzea Direccion klasearen propietateak erabiliz
                 Console.WriteLine("ID: {0}, Usuario: {1}, Nombre: {2}, Email: {3}, Ciudad: {4}, CP: {5}",
                     usuario.Idx, usuario.UsuarioNombre, usuario.Nombre, usuario.Email, usuario.Direccion.Ciudad, usuario.Direccion.CodigoPostal);
             }
@@ -80,6 +81,7 @@ namespace ConsolaNHibernate
                 CodigoPostal = "12345",
                 Usuario = nuevoUsuario
             };
+            // Erabiltzaile eta helbidearen datuak eskuz ezarrita
 
             nuevoUsuario.Direccion = nuevoDireccion;
 
@@ -92,7 +94,18 @@ namespace ConsolaNHibernate
 
         private static void EzabatuUsuarioa()
         {
-            
+            var usuario = controladorUsuario.ErabiltzaileaLortu(3); // Ezabatu nahi den erabiltzailearen IDa ezarrita
+            if (usuario != null)
+            {
+                // Erabiltzailea eta bere erlazionatuta dagoen helbidea ezabatzen du
+                controladorUsuario.ErabiltzaileaEzabatu(usuario.Idx);
+                Console.WriteLine("Erabiltzailea ongi ezabatu da.\nSakatu tekla bat jarraitzeko...");
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("Erabiltzailea ez da aurkitu.\nSakatu tekla bat jarraitzeko...");
+            }
         }
 
         private static void EguneratuUsuarioa()
