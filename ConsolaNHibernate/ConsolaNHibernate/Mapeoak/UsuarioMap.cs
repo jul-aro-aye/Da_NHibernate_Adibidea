@@ -22,7 +22,18 @@ namespace ConsolaNHibernate.Mapeoak
 
             HasOne(x => x.Direccion)
                 .Cascade.All()
-                .PropertyRef("Usuario"); // Helbideak erabiltzailearen erreferentzia duen propietatea)
+                .PropertyRef("Usuario"); // Helbideak erabiltzailearen erreferentzia duen propietatea
+
+            // Cascade all egitean 1:1 erlazioan, helbide bat ezabatzen denean, erabiltzailea ere ezabatuko da erlazioa definituta dagoelako objetuarekin
+            // 1:many erlazioan ez da horrela gertatzen, kasu horretan Cascade.AllDeleteOrphan erabili behar da ezabatzeko
+            // ez dagoelako objerturik erlazioan, zutabean bakarrik dagoelako erlazionatuta
+
+
+            HasMany(x => x.Pedidos)
+                .Cascade.All()
+                .KeyColumn("usuario_id") // ← eskariak taulan dagoen foreign key zutabea
+                .Inverse()
+                .Cascade.AllDeleteOrphan();
         }
     }
 

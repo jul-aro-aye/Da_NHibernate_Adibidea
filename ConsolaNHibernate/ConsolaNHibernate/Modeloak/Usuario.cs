@@ -12,9 +12,9 @@ namespace ConsolaNHibernate.Modeloak
         public virtual string UsuarioNombre { get; set; }
         public virtual string Nombre { get; set; }
         public virtual string Email { get; set; }
-        public virtual Direccion Direccion { get; set; }
+        public virtual Direccion Direccion { get; set; } // ONE to ONE
 
-        public virtual IList<Pedido> Pedidos { get; set; }
+        public virtual IList<Pedido> Pedidos { get; set; } // ONE to MANY
 
     }
 }

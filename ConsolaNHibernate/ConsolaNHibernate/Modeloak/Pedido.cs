@@ -11,6 +11,8 @@ namespace ConsolaNHibernate.Modeloak
         public int Id { get; set; }
         public DateTime Fecha { get; set; }
         public decimal Total { get; set; }
-        
+
+        public Usuario Usuario { get; set; }
+
     }
 }

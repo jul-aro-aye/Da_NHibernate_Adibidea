@@ -117,6 +117,7 @@
     <Compile Include="Controladores\ControladorUsuario.cs" />
     <Compile Include="Controladores\ControladorDireccion.cs" />
     <Compile Include="Mapeoak\DireccionMap.cs" />
+    <Compile Include="Mapeoak\PedidoMap.cs" />
     <Compile Include="Mapeoak\UsuarioMap.cs" />
     <Compile Include="Modeloak\Direccion.cs" />
     <Compile Include="Modeloak\Pedido.cs" />
