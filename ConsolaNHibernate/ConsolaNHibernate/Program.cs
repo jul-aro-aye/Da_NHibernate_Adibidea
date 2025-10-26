@@ -57,10 +57,22 @@ namespace ConsolaNHibernate
             foreach (var usuario in usuarios)
             {
                 // Erabiltzailearen datuak eta helbidea bistaratzea Direccion klasearen propietateak erabiliz
-                Console.WriteLine("ID: {0}, Usuario: {1}, Nombre: {2}, Email: {3}, Ciudad: {4}, CP: {5}",
-                    usuario.Idx, usuario.UsuarioNombre, usuario.Nombre, usuario.Email, usuario.Direccion.Ciudad, usuario.Direccion.CodigoPostal);
-            }
+                Console.WriteLine($"\nID: {usuario.Idx}, Usuario: {usuario.UsuarioNombre}, Nombre: {usuario.Nombre}, Email: {usuario.Email}");
+                Console.WriteLine($"Ciudad: {usuario.Direccion?.Ciudad ?? "—"}, CP: {usuario.Direccion?.CodigoPostal ?? "—"}");
 
+                if (usuario.Pedidos != null && usuario.Pedidos.Any())
+                {
+                    Console.WriteLine("Pedidos:");
+                    foreach (var pedido in usuario.Pedidos)
+                    {
+                        Console.WriteLine($"   → Pedido #{pedido.Idx} | Fecha: {pedido.Fecha:d} | Total: {pedido.Total:C}");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("   (Eskaera gabe)");
+                }
+            }
             Console.WriteLine("Sakatu tekla bat jarraitzeko...");
             Console.ReadKey();
         }

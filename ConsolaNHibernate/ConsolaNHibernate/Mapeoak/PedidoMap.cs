@@ -12,10 +12,10 @@ namespace ConsolaNHibernate.Mapeoak
     {
         public PedidoMap()
         {
-            Table("pedidos"); // ← Taularen izen erreala jarri
-            Id(x => x.Id).Column("idx").GeneratedBy.Identity();
+            Table("eskariak"); // ← Taularen izen erreala jarri
+            Id(x => x.Idx).Column("idx").GeneratedBy.Identity();
             Map(x => x.Fecha).Column("data");
-            Map(x => x.Total).Column("zanbatekoa");
+            Map(x => x.Total).Column("zenbatekoa");
             References(x => x.Usuario)
                 .Column("usuario_idx"); // Erabiltzailearen foreign key
         }

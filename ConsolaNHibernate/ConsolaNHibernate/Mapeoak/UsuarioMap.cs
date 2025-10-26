@@ -30,10 +30,10 @@ namespace ConsolaNHibernate.Mapeoak
 
 
             HasMany(x => x.Pedidos)
-                .Cascade.All()
-                .KeyColumn("usuario_id") // ← eskariak taulan dagoen foreign key zutabea
+                .KeyColumn("usuario_idx") // ← eskariak taulan dagoen foreign key zutabea
                 .Inverse()
-                .Cascade.AllDeleteOrphan();
+                .Cascade.AllDeleteOrphan()
+                .Not.LazyLoad();
         }
     }
 
